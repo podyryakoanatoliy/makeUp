@@ -6,120 +6,214 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     <script type="module" crossorigin src="/makeUp/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/makeUp/assets/styles-DvPDDfy5.css">
+    <link rel="stylesheet" crossorigin href="/makeUp/assets/index-De76yfLz.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/makeUp/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
+    <header id="header" class="header">
+  <div class="container header-container">
+    <nav class="header-navigation">
+      <div class="header-navigation-container">
+        <!-- Mobile -->
+        <a href="./index.html" class="header-logo">
+          <img
+            class="header-photo"
+            src="/makeUp/assets/logo-DLc8S849.jpg"
+            alt="my-photo"
+            width="100"
+            height="100"
+          />
+
+          <p class="header-name">
+            ELIZABETH <br />
+            <span class="name-part">BEAUTY</span>
+          </p>
+        </a>
+        <button type="button" class="header-button header-mob-button">
+          <svg class="header-mobile-menu" width="28" height="28">
+            <use href="./img/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <!-- mobile end -->
+        <!-- start tab+desk -->
+        <div class="header-menu-div">
+          <!-- <a class="header-menu">Menu</a> -->
+          <button class="header-menu">Меню</button>
+          <div class="tab-menu-hidden">
+            <ul>
+              <li class="tab-item-section">
+                <a href="#about-me" class="mob-link">Про мене</a>
+              </li>
+              <li class="tab-item-section">
+                <a href="#benefits" class="mob-link">Переваги</a>
+              </li>
+              <li class="tab-item-section">
+                <a href="#projects" class="mob-link">Виставка</a>
+              </li>
+              <li class="tab-item-section">
+                <a href="#faq" class="mob-link">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="#footer" class="header-button header-tab-button">
+          Консультація
+        </a>
+        <!-- end tab+desk -->
+      </div>
     </nav>
+  </div>
+  <!-- Modal window -->
+  <div class="mob-menu-backdrop">
+    <button type="button" class="mob-close">
+      <svg class="mob-icon-close" width="28" height="28">
+        <use href="./img/icons.svg#icon-x"></use>
+      </svg>
+    </button>
+    <div class="mob-nav">
+      <nav>
+        <ul class="mob-list">
+          <li class="mob-item">
+            <a href="#about-me" class="mob-link">Про мене</a>
+          </li>
+          <li class="mob-item">
+            <a href="#benefits" class="mob-link">Переваги</a>
+          </li>
+          <li class="mob-item">
+            <a href="#projects" class="mob-link">Виставка</a>
+          </li>
+          <li class="mob-item">
+            <a href="#faq" class="mob-link">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <a href="#footer" class="header-button header-modal-button">
+      Консультація
+    </a>
   </div>
 </header>
 
 
     <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/makeUp/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
-    </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
+      <section id="hero" class="hero">
+  <div class="container hero-container">
+    <h1 class="hello-headline">
+      Привіт<br />Вітаю на моєму сайті.<br />Я майстер-візажист - Єлизавета
+      Подиряко.
     </h1>
-  </div>
-</section>
+    <div class="glory">
+      <p>Слава <span class="hero-part">Україні</span></p>
+      <p><span class="hero-part">Героям</span> Слава</p>
+    </div>
 
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
+    <ul class="social-links">
+      <li class="social-link-item">
         <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
+          href="https://www.instagram.com/_liza_podyriako/"
+          class="social-link"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer nofollow"
         >
-          HTML Inject
+          IG
         </a>
       </li>
-      <li class="badges-item">
+
+      <li class="social-link-item">
         <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
+          href="https://www.facebook.com/"
+          class="social-link"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer nofollow"
         >
-          Full Reload
+          FB
         </a>
       </li>
-      <li class="badges-item">
+      <li class="social-link-item">
         <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
+          href="https://github.com/"
+          class="social-link"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer nofollow"
         >
-          Sort Media Queries
+          GH
+        </a>
+      </li>
+      <li class="social-link-item">
+        <a
+          href="mailto:soloshenkoliza2003@gmail.com"
+          class="social-link email"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
+          soloshenkoliza2003@gmail.com
         </a>
       </li>
     </ul>
   </div>
-</article>
+</section>
 
     </main>
 
-    <footer class="footer">
+    <footer id="footer" class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
+    <div class="container-title-footer">
+      <div class="container-img-footer">
+        <img
+          src="../img/footer/image_footer.png"
+          alt="client photo"
+          class="img-footer"
+        />
+        <h2 class="title-footer">
+          Давай почнемо <span class="span-footer">ПРАЦЮ</span><br />
+        </h2>
+      </div>
+      <h2 class="title-footer">разом</h2>
+    </div>
+    <form class="form-footer" autocomplete="off">
+      <input
+        type="email"
+        class="input-email"
+        name="email"
+        placeholder="clients@gmail.com"
+        pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+      />
+      <span class="span-email-succes">Успішно!</span>
+      <span class="span-email-invalid">Некоректна почта, спробуй ще</span>
+      <input
+        type="text"
+        class="input-comments"
+        name="comments"
+        placeholder="Коментар"
+      />
+      <span class="span-comments-succes">Успішно!</span>
+      <span class="span-comments-invalid"
+        >Некоректний коментар, спробуй ще</span
       >
-        GoIT team
-      </a>
-    </p>
+      <button type="submit" class="button-footer">Надіслати</button>
+    </form>
+    <div>
+      <ul class="container-contact-footer">
+        <li>
+          <a
+            href="mailto:soloshenkoliza2003@gmail.com"
+            class="contact-footer contact-footer-email"
+            >soloshenkoliza2003@gmail.com</a
+          >
+        </li>
+        <li>
+          <a href="tel:+380987893587" class="contact-footer contact-footer-tel"
+            >+380 98 789 35 87</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="container-footer-modal hidden">
+      <div class="modal-windows-content">
+        <button type="button" class="button-close">X</button>
+        <ul class="modal"></ul>
+      </div>
+    </div>
   </div>
 </footer>
 

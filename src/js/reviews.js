@@ -3,7 +3,7 @@ const maxWords = 190;
 
 // Завантаження даних з локального JSON-файлу
 export async function newData() {
-  const response = await fetch('./js/reviews.json'); // локальний файл
+  const response = await fetch('../js/reviews.json'); // локальний файл
   if (!response.ok) {
     throw new Error(`HTTP error! status: ${response.status}`);
   }

@@ -21,7 +21,7 @@ import{A as S,S as g}from"./assets/vendor-DpF08Fhr.js";(function(){const e=docum
               ${n}
             </p>
             <a href="${r}" class="main-button-a" id="projectBtn">${c}</a>
-          </div>`).join("")}document.addEventListener("DOMContentLoaded",()=>{const t=document.getElementById("projectBtn");t&&t.addEventListener("click",e=>{e.preventDefault();const o=document.querySelector(t.getAttribute("href"));o&&window.scrollTo({top:o.offsetTop,behavior:"smooth"})})});const V=document.querySelector(".swiper-wrapper-js"),b=190;async function G(){const t=await fetch("./js/reviews.json");if(!t.ok)throw new Error(`HTTP error! status: ${t.status}`);return t.json()}async function F(){let t=[];try{t=(await G()).reviews}catch(e){console.error(e)}t.forEach(e=>{const o=`
+          </div>`).join("")}document.addEventListener("DOMContentLoaded",()=>{const t=document.getElementById("projectBtn");t&&t.addEventListener("click",e=>{e.preventDefault();const o=document.querySelector(t.getAttribute("href"));o&&window.scrollTo({top:o.offsetTop,behavior:"smooth"})})});const V=document.querySelector(".swiper-wrapper-js"),b=190;async function G(){const t=await fetch("../js/reviews.json");if(!t.ok)throw new Error(`HTTP error! status: ${t.status}`);return t.json()}async function F(){let t=[];try{t=(await G()).reviews}catch(e){console.error(e)}t.forEach(e=>{const o=`
         <li class="swiper-slide review-card">
           <img src="${e.avatar_url}" class="review-img" alt="${e.author}" />
           <p class="review-name">${e.author}</p>

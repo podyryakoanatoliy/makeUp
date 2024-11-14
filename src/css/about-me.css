@@ -45,11 +45,11 @@
 }
 
 .ac .ac-header .aboutme-ac-trigger {
-    font-family: "Inter Tight", sans-serif;
+    font-family: "Sofia Sans Condensed", sans-serif;
     position: relative;
     padding-right: 30px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 30px;
     line-height: 1.5;
     letter-spacing: -0.02em;
     text-transform: uppercase;
@@ -189,6 +189,7 @@
 }
 
 .aboutme-swiper-container>.aboutme-swiper-wrapper>.aboutme-swiper-slide {
+    font-size: 20px;
     border-radius: 100%;
     border-width: 1px;
     border-style: solid;
@@ -212,10 +213,11 @@
 }
 
 .instagram {
+    font-family: "Sofia Sans Condensed", sans-serif;
     color: #f11212;
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 23px;
 }
 
 .aboutme-button-1440 {
@@ -237,9 +239,9 @@
 }
 
 .accordion-container .aboutme-ac .aboutme-ac-panel .aboutme-ac-text {
-    font-family: "Inter Tight", sans-serif;
+    font-family: "Sofia Sans Condensed", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
     letter-spacing: -0.02em;
     color: #fafafa;
@@ -333,6 +335,10 @@
         flex-direction: column;
         align-items: end;
         padding-right: 68px;
+    }
+
+    .aboutme-swiper-container>.aboutme-swiper-wrapper>.aboutme-swiper-slide {
+        font-size: 30px;
     }
 
     .accordion-container .aboutme-ac .aboutme-ac-text {

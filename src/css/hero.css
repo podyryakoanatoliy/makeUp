@@ -71,7 +71,7 @@
   padding-bottom: 0;
   padding-right: 0;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: -0.02em;
   text-align: center;
   gap: 4px;
@@ -177,12 +177,13 @@
   }
 
   .social-link {
+    font-size: 20px;
     width: 55px;
     height: 55px;
   }
 
   .email {
-    font-size: 16px;
+    font-size: 20px;
     width: 250px;
   }
 
